@@ -1,6 +1,13 @@
 import styles from './voluntario.module.scss'
+import { useState } from "react";
 
 const Voluntario = () => {
+  const [enviado, setEnviado] = useState(false);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setEnviado(true); 
+  }
 return (
   <>
     <section className={styles.sectionVoluntario}>
@@ -23,37 +30,48 @@ return (
       </div>
     </section>
 
-    <section className={styles.sectionForm}>
-      <form className={styles.formContainer}>
-        <h2>Inscrição para Voluntários</h2>
+      <section className={styles.sectionForm}>
+        {!enviado ? (
+          <form className={styles.formContainer} onSubmit={handleSubmit}>
+            <h2>Inscrição para Voluntários</h2>
 
-        <div className={styles.grupo}>
-          <h4>Dados Pessoais</h4>
+            <div className={styles.grupo}>
+              <h4>Dados Pessoais</h4>
 
-          <div className={styles.row}>
-            <input type="text" placeholder="Seu Nome *" required />
-            <input type="email" placeholder="Seu Email *" required />
+              <div className={styles.row}>
+                <input type="text" placeholder="Seu Nome *" required />
+                <input type="email" placeholder="Seu Email *" required />
+              </div>
+
+              <div className={styles.row}>
+                <input type="text" placeholder="Seu Telefone *" required />
+              </div>
+            </div>
+
+            <div className={styles.grupo}>
+              <h4>Mensagem Adicional</h4>
+              <textarea placeholder="Conte-nos porque você quer ser voluntário..." />
+            </div>
+
+            <p className={styles.infoText}>
+              Entraremos em contato para mais informações
+            </p>
+
+            <button type="submit" className={styles.btnEnviar}>
+              Enviar Inscrição
+            </button>
+          </form>
+        ) : (
+          <div className={styles.sucessoBox}>
+            <div className={styles.icone}>
+              ✓
+            </div>
+            <p>Cadastro realizado com sucesso. Entraremos em contato para mais informações.</p>
           </div>
+        )}
+      </section>
+    </>
+  );
+};
 
-          <div className={styles.row}>
-            <input type="text" placeholder="Seu Telefone *" required />
-          </div>
-        </div>
-
-        <div className={styles.grupo}>
-          <h4>Mensagem Adicional</h4>
-          <textarea placeholder="Conte-nos porque você quer ser voluntário..." />
-        </div>
-
-        <p className={styles.infoText}>Entraremos em contato para mais informações</p>
-
-        <button type="submit" className={styles.btnEnviar}>
-          Enviar Inscrição
-        </button>
-      </form>
-    </section>
-  </>
-)
-}
-
-export default Voluntario
+export default Voluntario;
