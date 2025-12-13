@@ -1,15 +1,17 @@
+@use '../../styles/variaveis.scss';
+
 .footer {
-  background: #111;
-  color: #f1f1f1;
+  background: variaveis.$color-footer-bg;
+  color: variaveis.$color-white;
   padding: 3rem 2rem 2rem;
   font-family: "Inter", sans-serif;
 
   .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .boxLogo1 {
@@ -18,11 +20,11 @@
     gap: 1rem;
 
     p {
-     margin-top: 0.3rem;
-     line-height: 1.4;
-     font-size: 0.9rem;
-     color: #dcdcdc;
-     max-width: 250px;
+      margin-top: 0.3rem;
+      line-height: 1.4;
+      font-size: 0.9rem;
+      color: variaveis.$color-white;
+      max-width: 250px;
     }
   }
 
@@ -32,54 +34,54 @@
     gap: 0.6rem;
 
     h3 {
-     margin: 0;
-     font-size: 1.1rem;
-     font-weight: 600;
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
     }
   }
 
   .coluna1 {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 0.5rem;
-      margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 
-  h3 {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
+    h3 {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
 
-  p {
-    margin-top: 10px;
-    line-height: 1.5;
-  }
+    p {
+      margin-top: 10px;
+      line-height: 1.5;
+    }
 
-  ul {
-    list-style: none;
-    padding: 0;
+    ul {
+      list-style: none;
+      padding: 0;
 
-    li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 10px;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
 
-      img {
-        width: 18px;
-        height: 18px;
+        img {
+          width: 18px;
+          height: 18px;
+        }
       }
     }
   }
-}
 
   .copy {
     margin-top: 2.5rem;
     text-align: center;
     font-size: 0.85rem;
-    color: #b5b5b5;
-    border-top: 1px solid #000000;
+    color: variaveis.$color-white;
+    border-top: 2px solid variaveis.$color-black;
     padding-top: 2rem;
   }
 
@@ -103,8 +105,9 @@
       h3 {
         font-size: 0.9rem;
       }
+
       img {
-        width: 2rem; 
+        width: 2rem;
         height: auto;
       }
     }
@@ -138,4 +141,3 @@
     }
   }
 }
-

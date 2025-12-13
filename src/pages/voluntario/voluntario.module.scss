@@ -1,31 +1,34 @@
+@use '../../styles/variaveis.scss';
+
 .sectionVoluntario {
   width: 100%;
-  background-color: #ffffff;
+  background-color: variaveis.$color-off-white;
   padding: 2rem 6rem;
-  color: #000;
+  color: variaveis.$color-black;
   font-family: "Inter", sans-serif;
 
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 
   h2 {
-    font-size: 2.4rem;  
+    font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    text-align: center; 
+    text-align: center;
   }
 
   p {
     font-size: 1rem;
-    max-width: 600px;   
-    text-align: center; 
+    max-width: 600px;
+    text-align: center;
     opacity: 0.85;
     margin-bottom: 3rem;
   }
 
   .boxCards {
     width: 100%;
+    background-color: variaveis.$color-white;
     max-width: 1500px;
     display: flex;
     gap: 2rem;
@@ -55,7 +58,7 @@
 
 .sectionForm {
   width: 100%;
-  background: #00745A;
+  background: variaveis.$color-primary;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
@@ -63,11 +66,11 @@
 }
 
 .formContainer {
-  background: #fff;
+  background: variaveis.$color-off-white;
   width: 100%;
   max-width: 900px;
   border-radius: 10px;
-  border: 1px solid #000000;
+  border: 1px solid variaveis.$color-black;
   padding: 2.5rem 3rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   display: flex;
@@ -101,14 +104,14 @@
       flex: 1;
       padding: 0.9rem 1rem;
       font-size: 0.95rem;
-      border: 1px solid #000000;
+      border: 1px solid variaveis.$color-black;
       border-radius: 6px;
-      background: #F8F8F8;
+      background: variaveis.$color-off-white;
       font-family: inherit;
 
       &:focus {
         outline: none;
-        border-color: #00745A;
+        border-color: variaveis.$color-primary;
       }
     }
   }
@@ -120,13 +123,13 @@
     padding: 1rem;
     font-size: 0.95rem;
     font-family: inherit;
-    border: 1px solid #000000;
+    border: 1px solid variaveis.$color-black;
     border-radius: 6px;
-    background: #f7f7f7;
+    background: variaveis.$color-off-white;
 
     &:focus {
       outline: none;
-      border-color: #00745A;
+      border-color: variaveis.$color-primary;
     }
   }
 
@@ -140,8 +143,8 @@
   .btnEnviar {
     width: fit-content;
     margin: 0 auto;
-    background: #00745A;
-    color: #fff;
+    background: variaveis.$color-primary;
+    color: variaveis.$color-white;
     border: none;
     padding: 0.8rem 2.2rem;
     font-size: 1rem;
@@ -156,7 +159,7 @@
 }
 
 .sucessoBox {
-  background: #fff;
+  background: variaveis.$color-white;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -175,8 +178,8 @@
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background: #005a49;
-  color: #fff;
+  background: variaveis.$color-primary;
+  color: variaveis.$color-white;
   font-size: 2.2rem;
   display: flex;
   align-items: center;
@@ -241,7 +244,7 @@
     max-width: 350px;
   }
 
-    .sectionForm {
+  .sectionForm {
     padding: 3rem 1.5rem;
   }
 
@@ -320,7 +323,6 @@
       margin-bottom: 0.3rem;
     }
 
-    /* Linha que vira coluna */
     .row {
       flex-direction: column;
       gap: 0.8rem;

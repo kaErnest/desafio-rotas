@@ -1,171 +1,173 @@
+@use '../../styles/variaveis.scss';
+
 .section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4rem 6rem;
-    gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+  gap: 3rem;
 
-    .conteudo {
-        max-width: 480px;
+  .conteudo {
+    max-width: 480px;
 
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin: 1.5rem  0;
-            color: #000;
-        }
-
-        p {
-            font-size: 1.125rem;
-            color: #444;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 2rem;
-
-
-            .btnUm {
-                padding: 12px 24px;
-                border-radius: 8px;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 1rem;
-                background: #00745A;
-                color: #fff;
-
-                &:hover {
-                    background-color: #02634c;
-                }
-            }
-
-            .btnDois {
-                padding: 12px 24px;
-                border-radius: 8px;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 1rem;
-                border: 2px solid #00745A;
-                color: #00745A
-            }
-        }
-    }
-}
-
-.sectionMissao {
-    width: 100%;
-    background-color: #00745A;
-    padding: 2rem 6rem;
-    color: white;
-    font-family: "Inter", sans-serif;
-    display: flex;
-    flex-direction: column;
-
-
-    h2 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 1.5rem 0;
+      color: variaveis.$color-black;
     }
 
     p {
+      font-size: 1.125rem;
+      color: variaveis.$color-black;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 2rem;
+
+
+      .btnUm {
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        background: variaveis.$color-primary;
+        color: variaveis.$color-white;
+
+        &:hover {
+          background-color: #02634c;
+        }
+      }
+
+      .btnDois {
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        border: 2px solid variaveis.$color-primary;
+        color: variaveis.$color-primary;
+      }
+    }
+  }
+}
+
+.sectionMissao {
+  width: 100%;
+  background-color: variaveis.$color-primary;
+  padding: 2rem 6rem;
+  color: variaveis.$color-white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
     font-size: 1rem;
     max-width: 600px;
     opacity: 0.85;
     margin-bottom: 3rem;
-    }
+  }
 
-    .boxCards {
+  .boxCards {
     width: 100%;
     max-width: 1500px;
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
-    }
+  }
 
-    article {
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      border-radius: 10px;
-      padding: 0.5rem 1rem;
+  article {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
 
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-
-      h3 {
-        font-size: 1.3rem;
-        font-weight: 700;
-        margin-top: 1rem;
-      }
-      
-      p {
-        margin-top: 1.5rem;
-         padding: 0 1rem;
-         
-      }
-
-    }
-}
-
-.sectionImpacto {
-    width: 100%;
-    background-color: #ffffff;
-    padding: 2rem 6rem;
-    color: rgb(0, 0, 0);
-    font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 2rem;
+    text-align: center;
 
-
-
-    h2 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-top: 1rem;
     }
 
     p {
+      margin-top: 1.5rem;
+      padding: 0 1rem;
+
+    }
+
+  }
+}
+
+.sectionImpacto {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem 6rem;
+  color: rgb(0, 0, 0);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
     font-size: 1rem;
     max-width: 600px;
     opacity: 0.85;
     margin-bottom: 3rem;
-    }
+  }
 
-    .boxCards {
+  .boxCards {
     width: 100%;
     max-width: 1500px;
     display: flex;
     gap: 2.5rem;
+  }
+
+  article {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+      color: variaveis.$color-primary;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-top: 1.5rem;
     }
 
-    article {
-      border: 1px solid rgba(0, 0, 0, 0.6);
-      border-radius: 10px;
-      padding: 1rem 4rem;
-
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-
-      h3 {
-        color: #00745A;         
-        font-size: 3rem;
-        font-weight: 700;
-        margin-top: 1.5rem;
-      }
-      
-      p {
-        margin-top: 1rem;
-        font-size: 1rem;
-      }
-
+    p {
+      margin-top: 1rem;
+      font-size: 1rem;
     }
+
+  }
 }
 
 @media (max-width: 1024px) {
@@ -175,7 +177,7 @@
   }
 
   .doutorImgBox {
-    display: none;  
+    display: none;
   }
 
   .boxCards {
@@ -229,7 +231,7 @@
     max-width: 350px;
   }
 
-    .sectionImpacto {
+  .sectionImpacto {
     padding: 2rem;
     text-align: center;
   }
@@ -282,7 +284,7 @@
     font-size: 1.2rem;
   }
 
-    .sectionImpacto {
+  .sectionImpacto {
     padding: 1.5rem;
   }
 

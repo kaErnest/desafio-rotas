@@ -1,4 +1,4 @@
-import styles from './voluntario.module.scss'
+import styles from "./voluntario.module.scss";
 import { useState } from "react";
 
 const Voluntario = () => {
@@ -6,29 +6,29 @@ const Voluntario = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setEnviado(true); 
+    setEnviado(true);
   }
-return (
-  <>
-    <section className={styles.sectionVoluntario}>
-      <h2>Seja Voluntário</h2>
-      <p>Junte-se a nós e faça a diferença na vida de pessoas que precisam</p>
+  return (
+    <>
+      <section className={styles.sectionVoluntario}>
+        <h2>Seja Voluntário</h2>
+        <p>Junte-se a nós e faça a diferença na vida de pessoas que precisam</p>
 
-      <div className={styles.boxCards}> 
-        <article>
-          <h3>Impacto Direto</h3>
-          <p>Sua dedicação salva vidas e transforma comunidades</p>
-        </article>
-        <article>
-          <h3>Crescimento Pessoal</h3>
-          <p>Desenvolva habilidades e cresça profissionalmente</p>
-        </article>
-        <article>
-          <h3>Comunidade</h3>
-          <p>Faça parte de uma rede de profissionais comprometidos</p>
-        </article>
-      </div>
-    </section>
+        <div className={styles.boxCards}>
+          <article>
+            <h3>Impacto Direto</h3>
+            <p>Sua dedicação salva vidas e transforma comunidades</p>
+          </article>
+          <article>
+            <h3>Crescimento Pessoal</h3>
+            <p>Desenvolva habilidades e cresça profissionalmente</p>
+          </article>
+          <article>
+            <h3>Comunidade</h3>
+            <p>Faça parte de uma rede de profissionais comprometidos</p>
+          </article>
+        </div>
+      </section>
 
       <section className={styles.sectionForm}>
         {!enviado ? (
@@ -63,10 +63,11 @@ return (
           </form>
         ) : (
           <div className={styles.sucessoBox}>
-            <div className={styles.icone}>
-              ✓
-            </div>
-            <p>Cadastro realizado com sucesso. Entraremos em contato para mais informações.</p>
+            <div className={styles.icone}>✓</div>
+            <p>
+              Cadastro realizado com sucesso. Entraremos em contato para mais
+              informações.
+            </p>
           </div>
         )}
       </section>

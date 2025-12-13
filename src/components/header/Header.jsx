@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
-import styles from './header.module.scss'
-import Logo from '../../assets/logo.png'
-
+import { Link } from "react-router-dom";
+import styles from "./header.module.scss";
+import Logo from "../../assets/logo.png";
 
 const Header = () => {
   return (
@@ -12,10 +11,10 @@ const Header = () => {
       </div>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/voluntario">Seja Voluntário</Link> 
+        <Link to="/voluntario">Seja Voluntário</Link>
       </nav>
     </header>
   );
 };
 
-export default Header
+export default Header;

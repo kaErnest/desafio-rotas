@@ -1,3 +1,5 @@
+@use '../../styles/variaveis.scss';
+
 .header {
   width: 100%;
   display: flex;
@@ -13,7 +15,7 @@
 
     a {
       text-decoration: none;
-      color: #000;
+      color: variaveis.$color-black;
       font-size: 1rem;
       font-weight: 600;
     }
@@ -26,11 +28,11 @@
 
     a {
       text-decoration: none;
-      color: #000;
+      color: variaveis.$color-black;
 
       &:nth-child(2) {
-        background-color: #00745A;
-        color: #fff;
+        background-color: variaveis.$color-primary;
+        color: variaveis.$color-white;
         padding: 0.6rem 1.3rem;
         border-radius: 8px;
         font-weight: 600;
